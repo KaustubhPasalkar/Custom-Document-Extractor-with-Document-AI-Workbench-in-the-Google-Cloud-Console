@@ -7,6 +7,7 @@ This repository demonstrates how to create, train, and deploy a custom document 
 
 <img width="726" alt="DocumentAI21" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/c9496f06-1138-439c-82c7-ece02a4278da">
 
+
 In the Google Cloud console, navigate to the Document AI section and create a new processor for custom document extraction. Name the processor (e.g., my-custom-document-extractor), select the nearest region, and opt for Google-managed storage and encryption.
 
 
