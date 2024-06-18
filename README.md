@@ -1,9 +1,9 @@
 ## Custom Document Extractor with Document AI Workbench in the Google Cloud Console
 This repository demonstrates how to create, train, and deploy a custom document extractor using Google Cloud's Document AI Workbench. The project involves setting up the environment, defining processor fields, labeling documents, training models, and deploying the trained models. Below is a detailed technical overview of each step involved:
 
-### Project Setup:
+## Project Setup:
 
-### 1- Create a Processor: 
+## 1- Create a Processor: 
 
 <img width="726" alt="DocumentAI21" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/c9496f06-1138-439c-82c7-ece02a4278da">
 
@@ -11,7 +11,7 @@ This repository demonstrates how to create, train, and deploy a custom document 
 In the Google Cloud console, navigate to the Document AI section and create a new processor for custom document extraction. Name the processor (e.g., my-custom-document-extractor), select the nearest region, and opt for Google-managed storage and encryption.
 
 
-### 2- Processor Configuration:
+## 2- Processor Configuration:
 
 <img width="727" alt="DocumentAI11" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/57eb6e99-ed42-4320-843a-77f809a37d3a">
 
@@ -21,7 +21,7 @@ Specify the fields to be extracted by the processor. Create fields such as contr
 Define attributes like Data Type (e.g., Number, Money, Address) and Occurrence (e.g., Optional multiple, Required multiple).
 
 
-### 3- Document Labeling:
+## 3- Document Labeling:
 
 <img width="717" alt="DocumentAI12" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/b37d3ddf-3094-4fa5-a994-32ebab666340">
 
@@ -30,7 +30,7 @@ Import sample documents from Cloud Storage to the labeling console.
 #### ii. Annotation: 
 Use tools like bounding box and select text to annotate documents. Confirm suggested labels by the foundation model, and manually label fields that are not identified automatically.
 
-### 4- Model Training:
+## 4- Model Training:
 
 <img width="723" alt="DocumentAI13" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/df556ec6-0482-4948-afba-83af0dc33db4">
 
@@ -39,7 +39,7 @@ Create a processor version using the pretrained foundation model for initial ext
 #### ii. Auto-Labeling with Generative AI: 
 Import additional documents, split data for training and testing, and use the foundation model to auto-label documents. Verify and manually correct auto-labeled documents.
 
-### 5- Training Custom Model-Based Processor:
+## 5- Training Custom Model-Based Processor:
 
 <img width="723" alt="DocumentAI15" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/0209e4ec-fbdd-487b-ab05-5e7ce54c2843">
 
@@ -48,18 +48,18 @@ Ensure at least 10 training and 10 test instances for each field.
 #### ii. Training Setup: 
 Name the processor version (e.g., w2-custom-model), and select the Model based training method. Start training, which might take several hours.
 
-### 6- Deployment:
+## 6- Deployment:
 #### i. Deploy Processor Version: 
 Deploy the trained processor version. Set it as the Default version or use the version ID for document processing.
 
-### 7- Evaluation and Testing:
+## 7- Evaluation and Testing:
 
 <img width="731" alt="DocumentAI14" src="https://github.com/KaustubhPasalkar/Custom-Document-Extractor-with-Document-AI-Workbench-in-the-Google-Cloud-Console/assets/52817783/5d4295ce-0429-4345-bc44-cafbd411e9d5">
 
 #### i. Evaluate Processor: 
 Test the processor version using new documents not involved in training. Assess performance using metrics like F1 score, precision, and recall.
 
-### 8- Using the Processor:
+## 8- Using the Processor:
 #### i. Manage Processor Versions: 
 Handle different processor versions similarly to other processors in Document AI.
 #### ii. API Integration: 
