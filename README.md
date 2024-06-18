@@ -1,4 +1,4 @@
-# Custom Document Extractor with Document AI Workbench in the Google Cloud Console
+## Custom Document Extractor with Document AI Workbench in the Google Cloud Console
 This repository demonstrates how to create, train, and deploy a custom document extractor using Google Cloud's Document AI Workbench. The project involves setting up the environment, defining processor fields, labeling documents, training models, and deploying the trained models. Below is a detailed technical overview of each step involved:
 
 ### Project Setup:
